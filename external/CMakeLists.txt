@@ -1,0 +1,10 @@
+add_library(litredhood_external INTERFACE)
+add_library(litredhood::external ALIAS litredhood_external)
+
+include(${CMAKE_CURRENT_LIST_DIR}/glfw.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/glad.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/glm.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/imgui.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/assimp.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/vulkan.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/spdlog.cmake)

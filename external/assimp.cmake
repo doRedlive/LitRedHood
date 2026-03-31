@@ -1,0 +1,6 @@
+set(ASSIMP_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(ASSIMP_BUILD_ASSIMP_TOOLS OFF CACHE BOOL "" FORCE)
+set(ASSIMP_INSTALL OFF CACHE BOOL "" FORCE)
+
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/assimp EXCLUDE_FROM_ALL)
+target_link_libraries(litredhood_external INTERFACE assimp)

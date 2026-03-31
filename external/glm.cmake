@@ -1,0 +1,5 @@
+set(GLM_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLM_BUILD_INSTALL OFF CACHE BOOL "" FORCE)
+
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/glm EXCLUDE_FROM_ALL)
+target_link_libraries(litredhood_external INTERFACE glm::glm)
